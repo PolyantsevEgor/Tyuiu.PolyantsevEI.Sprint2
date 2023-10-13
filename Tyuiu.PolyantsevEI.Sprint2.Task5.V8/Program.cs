@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Tyuiu.PolyantsevEI.Sprint2.Task4.V10.Lib;
+using Tyuiu.PolyantsevEI.Sprint2.Task5.V8.Lib;
 
-namespace Tyuiu.PolyantsevEI.Sprint2.Task4.V10
+namespace Tyuiu.PolyantsevEI.Sprint2.Task5.V8
 {
     internal class Program
     {
@@ -37,8 +37,8 @@ namespace Tyuiu.PolyantsevEI.Sprint2.Task4.V10
             Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
             Console.WriteLine("***************************************************************************");
 
-            double res = ds.Calculate(m, n);
-            Console.WriteLine("Дата предыдущего дня:" + res);
+            string res = ds.FindDateOfPreviousDay(m, n);
+            Console.WriteLine("Дата предыдущего дня: " + res);
             Console.ReadKey();
         }
     }
